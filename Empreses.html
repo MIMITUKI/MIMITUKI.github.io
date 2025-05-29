@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empreses Objectiu - Portafoli Hugo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color:  #93db34 ;
+      --accent-color: #0c0b0b;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 3rem 0;
+      margin-bottom: 3rem;
+    }
+    
+    .company-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+      height: 100%;
+    }
+    
+    .company-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    
+    .company-header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .company-body {
+      padding: 1.5rem;
+    }
+    
+    .requirement-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .requirement-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .requirement-list li::before {
+      content: '\F633';
+      font-family: 'bootstrap-icons';
+      position: absolute;
+      left: 0;
+      color: var(--secondary-color);
+    }
+    
+    .sector-badge {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+    
+    .map-container {
+      height: 300px;
+      background-color: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .map-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--secondary-color);
+      border-radius: 2px;
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background-color: var(--secondary-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Empreses Objectiu</h1>
+      <p class="lead">Els sectors i tipus d'empreses on pretenc desenvolupar la meva carrera professional</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container mb-5">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title">Els meus sectors d'interès</h2>
+        <p class="lead">Empreses tecnològiques del sector industrial dedicades a l'automatització, el manteniment i la innovació robòtica.</p>
+      </div>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="company-card">
+          <div class="company-header">
+            <h4><i class="bi bi-building-gear me-2"></i> Enginyeries Industrials</h4>
+          </div>
+          <div class="company-body">
+            <p>Empreses d'enginyeria que dissenyen i implementen solucions tecnològiques per a la indústria:</p>
+            <ul class="requirement-list">
+              <li>Disseny d'instal·lacions industrials</li>
+              <li>Automatització de processos</li>
+              <li>Projectes "llave en mano"</li>
+              <li>Consultoria tecnològica</li>
+            </ul>
+            <div class="mt-3">
+              <span class="sector-badge">Projectes</span>
+              <span class="sector-badge">Disseny</span>
+              <span class="sector-badge">Innovació</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="company-card">
+          <div class="company-header">
+            <h4><i class="bi bi-factory me-2"></i> Plantes de Producció</h4>
+          </div>
+          <div class="company-body">
+            <p>Empreses amb cadenes de producció automatitzades que requereixen tècnics especialitzats:</p>
+            <ul class="requirement-list">
+              <li>Manteniment industrial</li>
+              <li>Supervisió de processos</li>
+              <li>Millora contínua</li>
+              <li>Control de qualitat</li>
+            </ul>
+            <div class="mt-3">
+              <span class="sector-badge">Producció</span>
+              <span class="sector-badge">Manteniment</span>
+              <span class="sector-badge">Operacions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="company-card">
+          <div class="company-header">
+            <h4><i class="bi bi-tools me-2"></i> Serveis SAT</h4>
+          </div>
+          <div class="company-body">
+            <p>Empreses de serveis tècnics especialitzats en instal·lació i manteniment d'equips industrials:</p>
+            <ul class="requirement-list">
+              <li>Assistència tècnica</li>
+              <li>Reparacions urgents</li>
+              <li>Formació a clients</li>
+              <li>Actualitzacions tecnològiques</li>
+            </ul>
+            <div class="mt-3">
+              <span class="sector-badge">Servei</span>
+              <span class="sector-badge">Manteniment</span>
+              <span class="sector-badge">Atenció al client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="section-title">Ubicacions preferents</h3>
+        <div class="map-container">
+          <div class="map-overlay">Zona Industrial Barcelona i voltants</div>
+        </div>
+        <p class="mt-3 text-center">Prioritzo empreses ubicades a les zones industrials de Barcelona i el seu entorn, amb bona comunicació i possibilitat de transport públic.</p>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="section-title">Característiques desitjables</h3>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="feature-icon mx-auto">
+              <i class="bi bi-people"></i>
+            </div>
+            <h5>Ambient de Treball</h5>
+            <p>Empreses que valorin el treball en equip i el desenvolupament professional dels seus empleats.</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="feature-icon mx-auto">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <h5>Creixement Professional</h5>
+            <p>Possibilitats de promoció interna i formació contínua per als treballadors.</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="feature-icon mx-auto">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <h5>Innovació Tecnològica</h5>
+            <p>Empreses que aposten per la innovació i l'actualització tecnològica constant.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-3">
+      <div class="col-lg-8 mx-auto">
+        <div class="card border-primary">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Empreses d'Interès</h5>
+            <p>Algunes empreses concretes del sector que m'interessen especialment:</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Siemens Industrial Solutions</li>
+              <li class="list-group-item">ABB Automation</li>
+              <li class="list-group-item">Festo Didactic</li>
+              <li class="list-group-item">Schneider Electric</li>
+              <li class="list-group-item">Empreses locals d'automatització industrial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animació de les targetes
+    document.addEventListener('DOMContentLoaded', function() {
+      const companyCards = document.querySelectorAll('.company-card');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      companyCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
+</body>
+</html>

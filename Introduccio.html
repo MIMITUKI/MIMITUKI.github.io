@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducció - Portafoli Hugo</title>
+  <button class="btn btn-send">
+    <a href="Portada.html" class="social-link">
+      Portada
+    </a>
+  </button>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #93db34;
+      --accent-color: #290703;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 4rem 0;
+      margin-bottom: 3rem;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--secondary-color);
+      border-radius: 2px;
+    }
+    
+    .icon-box {
+      width: 60px;
+      height: 60px;
+      background: var(--secondary-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--secondary-color);
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-bottom: 30px;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--accent-color);
+      border: 4px solid var(--secondary-color);
+    }
+    
+    .btn-custom {
+      background: var(--secondary-color);
+      color: white;
+      border: none;
+      padding: 60px 75x;
+      border-radius: 100px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .social-link {
+      width: 100px;
+      height: 100px;
+      border-radius: 70%;
+      background-color: var(--secondary-color);
+      color: rgb(7, 6, 6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-link:hover {
+      background-color: var(--primary-color);
+      transform: translateY(-5px);
+    }
+    .btn-custom:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4">Introducció al Portafoli</h1>
+      <p class="lead mb-5">Un recorregut pels meus objectius professionals i el camí que pretenc seguir en el món de l'automatització i robòtica industrial</p>
+      <a href="index.html" class="btn btn-light btn-lg px-4">Explora el Portafoli</a>
+    </div>
+  </section>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="section-title text-center">Què trobaràs en aquest portafoli?</h2>
+        <p>Aquest portafoli recull la meva trajectòria professional, els meus objectius i les estratègies que utilitzaré per assolir-los. Està dissenyat per mostrar el meu compromís amb el món tecnològic i industrial.</p>
+      </div>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-hover h-100">
+          <div class="card-body text-center p-4">
+            <div class="icon-box mx-auto">
+              <i class="bi bi-bullseye"></i>
+            </div>
+            <h4 class="mb-3">Objectius Professionals</h4>
+            <p>Descobreix les meves metes d'especialització en automatització i robòtica industrial, així com les habilitats que pretenc desenvolupar.</p>
+            <a href="objectius.html" class="btn btn-custom mt-3">Veure Objectius</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card card-hover h-100">
+          <div class="card-body text-center p-4">
+            <div class="icon-box mx-auto">
+              <i class="bi bi-book"></i>
+            </div>
+            <h4 class="mb-3">Itinerari Formatiu</h4>
+            <p>El pla d'estudis que seguiré per assolir els meus objectius, des de la formació professional fins a cursos específics del sector.</p>
+            <a href="itinerari.html" class="btn btn-custom mt-3">Veure Itinerari</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card card-hover h-100">
+          <div class="card-body text-center p-4">
+            <div class="icon-box mx-auto">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="mb-3">Empreses Objectiu</h4>
+            <p>Les empreses i sectors on pretenc desenvolupar la meva carrera professional, amb les seves característiques i requisits.</p>
+            <a href="empreses.html" class="btn btn-custom mt-3">Veure Empreses</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="section-title">Estructura del Portafoli</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h5>1. Introducció</h5>
+            <p>Presentació general dels continguts del portafoli i la meva visió professional.</p>
+          </div>
+          <div class="timeline-item">
+            <h5>2. Objectius Professionals</h5>
+            <p>Metes concretes d'especialització i les habilitats que necessito desenvolupar.</p>
+          </div>
+          <div class="timeline-item">
+            <h5>3. Itinerari Formatiu</h5>
+            <p>Pla d'estudis detallat amb les qualificacions que pretenc obtenir.</p>
+          </div>
+          <div class="timeline-item">
+            <h5>4. Empreses Objectiu</h5>
+            <p>Sectors i tipus d'empreses on vull desenvolupar la meva carrera professional.</p>
+          </div>
+          <div class="timeline-item">
+            <h5>5. Pla de Promoció</h5>
+            <p>Estratègies per donar-me a conèixer en el sector i accedir a bones oportunitats.</p>
+          </div>
+          <div class="timeline-item">
+            <h5>6. Conclusions</h5>
+            <p>Reflexió final sobre el meu projecte professional i com puc assolir-lo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Efecto Scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.card-hover');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
+  
+ 
+</body>
+</html>

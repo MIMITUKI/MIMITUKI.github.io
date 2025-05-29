@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum - Hugo Martínez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #93db34;
+      --accent-color: #1a1312;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 3rem 0;
+      margin-bottom: 3rem;
+    }
+    
+    .cv-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    
+    .cv-header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .cv-name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .cv-title {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+    
+    .cv-contact {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+    
+    .contact-icon {
+      margin-right: 8px;
+      font-size: 1.2rem;
+      color: var(--secondary-color);
+    }
+    
+    .cv-body {
+      padding: 2rem;
+    }
+    
+    .section-title {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background-color: var(--accent-color);
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 2rem;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: var(--secondary-color);
+      border: 3px solid var(--primary-color);
+    }
+    
+    .timeline-date {
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+    
+    .timeline-content {
+      margin-top: 0.5rem;
+    }
+    
+    .skills-list {
+      columns: 2;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .skills-list li {
+      margin-bottom: 0.8rem;
+      position: relative;
+      padding-left: 25px;
+      break-inside: avoid;
+    }
+    
+    .skills-list li::before {
+      content: '\F633';
+      font-family: 'bootstrap-icons';
+      position: absolute;
+      left: 0;
+      color: var(--secondary-color);
+    }
+    
+    .language-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .language-name {
+      font-weight: 500;
+    }
+    
+    .language-level {
+      color: var(--primary-color);
+      font-style: italic;
+    }
+    
+    .btn-download {
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 500;
+      margin-top: 2rem;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-download:hover {
+      background-color: var(--primary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .btn-download i {
+      margin-right: 8px;
+    }
+    
+    @media (max-width: 768px) {
+      .skills-list {
+        columns: 1;
+      }
+      
+      .cv-name {
+        font-size: 2rem;
+      }
+      
+      .cv-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Currículum Vitae</h1>
+      <p class="lead">El meu recorregut acadèmic i professional</p>
+    </div>
+  </section>
+
+  <!-- Main CV Content -->
+  <div class="container mb-5">
+    <div class="cv-container">
+      <div class="cv-header">
+        <h1 class="cv-name">Hugo Martínez Moreno</h1>
+        <p class="cv-title">Estudiant d'Automatització i Robòtica Industrial</p>
+        <div class="cv-contact">
+          <div class="contact-item">
+            <i class="bi bi-geo-alt-fill contact-icon"></i>
+            <span>Carrer Ronda del Molí 7B, Torrelles de Llobregat</span>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-telephone-fill contact-icon"></i>
+            <span>722 866 011</span>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-envelope-fill contact-icon"></i>
+            <span>hugomm130@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cv-body">
+        <section>
+          <h2 class="section-title">Sobre mi</h2>
+          <p>Sóc una persona de 18 anys amb moltes ganes de treballar i aportar tots els meus coneixements a una empresa. M'encanta el món de la informàtica i m'agradaria aprendre més sobre aquesta professió. Em considero una persona responsable, treballadora i amb capacitat per aprendre ràpidament.</p>
+        </section>
+        
+        <section class="mt-4">
+          <h2 class="section-title">Educació</h2>
+          <div class="timeline-item">
+            <span class="timeline-date">2023 - Actualitat</span>
+            <div class="timeline-content">
+              <h5>CFGM Sistemes Microinformàtics i Xarxes</h5>
+              <p>INS Can Margarit</p>
+              <ul>
+                <li>Muntatge i manteniment d'equips</li>
+                <li>Configuració de xarxes locals</li>
+                <li>Sistemes operatius Windows i Linux</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2018 - 2022</span>
+            <div class="timeline-content">
+              <h5>Educació Secundària Obligatòria (ESO)</h5>
+              <p>INS Can Coll</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="mt-4">
+          <h2 class="section-title">Habilitats Tècniques</h2>
+          <ul class="skills-list">
+            <li>Aplicacions ofimàtiques: Excel, Word, LibreOffice</li>
+            <li>Xarxes locals: TCP/IP, Subnetting</li>
+            <li>Configuració de routers i switches</li>
+            <li>Sistemes operatius: Windows i Linux</li>
+            <li>Muntatge i manteniment de PCs i portàtils</li>
+            <li>Configuració de clients de correu electrònic</li>
+            <li>Resolució d'incidències informàtiques</li>
+            <li>Instal·lació de programari i controladors</li>
+          </ul>
+        </section>
+        
+        <section class="mt-4">
+          <h2 class="section-title">Idiomes</h2>
+          <div class="language-item">
+            <span class="language-name">Català</span>
+            <span class="language-level">Natiu</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">Castellà</span>
+            <span class="language-level">Natiu</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">Anglès</span>
+            <span class="language-level">Bàsic</span>
+          </div>
+        </section>
+        
+        <section class="mt-4">
+          <h2 class="section-title">Altres Dades</h2>
+          <ul>
+            <li>Disponibilitat per a fer pràctiques</li>
+            <li>Permís de conduir: En procés d'obtenció</li>
+            <li>Disposició per a desplaçaments</li>
+          </ul>
+        </section>
+        
+        <div class="text-center">
+          <a href="#" class="btn btn-download">
+            <i class="bi bi-download"></i> Descarregar CV en PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animació dels elements del currículum
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>

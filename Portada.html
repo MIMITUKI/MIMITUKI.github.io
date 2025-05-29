@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafoli Professional - Hugo Martínez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #93db34;
+      --accent-color: #0f0302;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--primary-color);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .hero-section {
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+      opacity: 0.9;
+    }
+    
+    .btn-portfolio {
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-portfolio:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      color: white;
+      background-color: #2980b9;
+    }
+    
+    .btn-portfolio::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.1) 50%);
+      background-size: 250%;
+      transition: all 0.5s ease;
+      opacity: 0;
+    }
+    
+    .btn-portfolio:hover::after {
+      background-position: 100% 0;
+      opacity: 1;
+    }
+    
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 2rem;
+    }
+    
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+      
+      .btn-portfolio {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Hugo Martínez Moreno</h1>
+      <p class="hero-subtitle">Portafoli Professional - Automatització i Robòtica Industrial</p>
+      
+      <div class="btn-group">
+        <a href="introduccio.html" class="btn-portfolio">
+          <i class="bi bi-house-door me-2"></i>Introducció
+        </a>
+        <a href="curriculum.html" class="btn-portfolio">
+          <i class="bi bi-file-earmark-person me-2"></i>Currículum
+        </a>
+        <a href="objectius.html" class="btn-portfolio">
+          <i class="bi bi-bullseye me-2"></i>Objectius
+        </a>
+        <a href="itinerari.html" class="btn-portfolio">
+          <i class="bi bi-book me-2"></i>Itinerari
+        </a>
+        <a href="empreses.html" class="btn-portfolio">
+          <i class="bi bi-building me-2"></i>Empreses
+        </a>
+        <a href="promocio.html" class="btn-portfolio">
+          <i class="bi bi-megaphone me-2"></i>Promoció
+        </a>
+        <a href="conclusions.html" class="btn-portfolio">
+          <i class="bi bi-check-circle me-2"></i>Conclusions
+        </a>
+        <a href="contacte.html" class="btn-portfolio">
+          <i class="bi bi-envelope me-2"></i>Contacte
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Hugo Martínez · INS Can Margarit · Automatització i Robòtica</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Efecto BTM
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('.btn-portfolio');
+      
+      buttons.forEach((btn, index) => {
+        btn.style.opacity = '0';
+        btn.style.transform = 'translateY(20px)';
+        btn.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+        
+        setTimeout(() => {
+          btn.style.opacity = '1';
+          btn.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    });
+  </script>
+</body>
+</html>

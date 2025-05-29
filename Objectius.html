@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objectius Professionals - Portafoli Hugo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color:  #93db34;
+      --accent-color: #140301;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 3rem 0;
+      margin-bottom: 3rem;
+    }
+    
+    .skill-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+    
+    .skill-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .card-header {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 600;
+      padding: 1.5rem;
+    }
+    
+    .skill-badge {
+      background-color: var(--secondary-color);
+      color: white;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+    }
+    
+    .progress {
+      height: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    
+    .progress-bar {
+      background-color: var(--secondary-color);
+    }
+    
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--secondary-color);
+      border-radius: 2px;
+    }
+    
+    .nav-pills .nav-link.active {
+      background-color: var(--secondary-color);
+    }
+    
+    .nav-pills .nav-link {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Objectius Professionals d'Especialització</h1>
+      <p class="lead">Les meves metes professionals en el camp de l'automatització i robòtica industrial</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container mb-5">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title">Les meves àrees d'especialització</h2>
+        <p class="lead">Els meus objectius professionals estan enfocats en dues àrees principals del món industrial, amb les quals em sento especialment identificat i motivat.</p>
+      </div>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="skill-card">
+          <div class="card-header">
+            <h4><i class="bi bi-robot me-2"></i> Tècnic Superior en Automatització</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Especialització en sistemes de control industrial i processos automatitzats:</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Programació de PLCs (Siemens, Allen Bradley)</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Instal·lació i manteniment de sistemes automatitzats</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Integració de sensors i visió artificial</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Sistemes SCADA i HMI</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Robòtica industrial col·laborativa</li>
+            </ul>
+            <div class="mb-3">
+              <h6>Habilitats clau:</h6>
+              <div>
+                <span class="skill-badge">PLC</span>
+                <span class="skill-badge">SCADA</span>
+                <span class="skill-badge">Electrònica</span>
+                <span class="skill-badge">Robòtica</span>
+                <span class="skill-badge">Sensors</span>
+              </div>
+            </div>
+            <div class="progress-container">
+              <h6>Nivell actual:</h6>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+              </div>
+              <small>En procés d'aprenentatge</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="skill-card">
+          <div class="card-header">
+            <h4><i class="bi bi-thermometer-snow me-2"></i> Tècnic en Climatització</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Especialització en sistemes de climatització i refrigeració industrial:</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Instal·lació de sistemes HVAC</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Eficiència energètica i normatives RITE</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Diagnosi i manteniment preventiu</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Sistemes de control climàtic automatitzat</li>
+              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Refrigeració industrial</li>
+            </ul>
+            <div class="mb-3">
+              <h6>Habilitats clau:</h6>
+              <div>
+                <span class="skill-badge">RITE</span>
+                <span class="skill-badge">Eficiència</span>
+                <span class="skill-badge">Muntatge</span>
+                <span class="skill-badge">Frigorista</span>
+                <span class="skill-badge">Control</span>
+              </div>
+            </div>
+            <div class="progress-container">
+              <h6>Nivell actual:</h6>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+              </div>
+              <small>Iniciant-me en aquest àmbit</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="section-title">Planificació temporal dels objectius</h3>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead class="table-primary">
+              <tr>
+                <th>Termini</th>
+                <th>Objectius</th>
+                <th>Indicadors d'Èxit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-2025</td>
+                <td>Completar CFGM Sistemes Microinformàtics i Xarxes</td>
+                <td>Obtenció del títol amb nota mitjana superior a 7</td>
+              </tr>
+              <tr>
+                <td>2025-2027</td>
+                <td>Cursar CFGS Automatització i Robòtica Industrial</td>
+                <td>Obtenció del títol i realització de pràctiques en empresa del sector</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td>Completar curs de PLC i SCADA</td>
+                <td>Certificat de superació i projecte pràctic final</td>
+              </tr>
+              <tr>
+                <td>2027</td>
+                <td>Obtenir certificació en climatització</td>
+                <td>Certificat RITE i primera experiència laboral en el sector</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animació de les barres de progrés
+    document.addEventListener('DOMContentLoaded', function() {
+      const progressBars = document.querySelectorAll('.progress-bar');
+      
+      progressBars.forEach(bar => {
+        const targetWidth = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.width = targetWidth;
+        }, 300);
+      });
+    });
+  </script>
+</body>
+</html>

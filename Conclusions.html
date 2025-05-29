@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conclusions - Portafoli Hugo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color:  #93db34;
+      --accent-color: #140b0a;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .social-link {
+      width: 100px;
+      height: 100px;
+      border-radius: 70%;
+      background-color: var(--secondary-color);
+      color: rgb(7, 6, 6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-link:hover {
+      background-color: var(--primary-color);
+      transform: translateY(-5px);
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 3rem 0;
+      margin-bottom: 3rem;
+    }
+    
+    .reflection-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+      height: 100%;
+    }
+    
+    .reflection-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    
+    .reflection-header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .reflection-body {
+      padding: 1.5rem;
+    }
+    
+    .key-point {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .key-point::before {
+      content: '\F633';
+      font-family: 'bootstrap-icons';
+      position: absolute;
+      left: 0;
+      color: var(--secondary-color);
+      font-size: 1.2rem;
+    }
+    
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--secondary-color);
+      border-radius: 2px;
+    }
+    
+    .quote-box {
+      border-left: 4px solid var(--secondary-color);
+      padding: 20px;
+      background-color: white;
+      border-radius: 0 10px 10px 0;
+      margin: 30px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    .quote-text {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--primary-color);
+    }
+    
+    .quote-author {
+      text-align: right;
+      font-weight: 600;
+      color: var(--secondary-color);
+      margin-top: 10px;
+    }
+    
+    .next-steps-list {
+      list-style-type: none;
+      padding-left: 0;
+      counter-reset: steps-counter;
+    }
+    
+    .next-steps-list li {
+      padding: 15px 0 15px 50px;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      counter-increment: steps-counter;
+    }
+    
+    .next-steps-list li::before {
+      content: counter(steps-counter);
+      position: absolute;
+      left: 0;
+      top: 15px;
+      width: 30px;
+      height: 30px;
+      background-color: var(--secondary-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Conclusions</h1>
+      <p class="lead">Reflexió final sobre el meu projecte professional i com puc assolir els meus objectius</p>
+    </div>
+  </section>
+
+  
+  <div class="container mb-5">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title">El meu camí professional</h2>
+        <p class="lead">Amb una planificació clara i orientada, és possible accedir a llocs de treball amb futur dins del món industrial. Aquesta orientació professional reflecteix el compromís amb el desenvolupament tecnològic i personal.</p>
+      </div>
+    </div>
+    <button class="btn btn-send">
+      <a href="Portada.html" class="social-link">
+        Portada
+      </a>
+    </button>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="reflection-card">
+          <div class="reflection-header">
+            <h4><i class="bi bi-lightbulb me-2"></i> Motivacions</h4>
+          </div>
+          <div class="reflection-body">
+            <div class="key-point">La meva passió per la tecnologia i els processos industrials em motiva a especialitzar-me en aquest camp.</div>
+            <div class="key-point">Crec que la combinació d'automatització i climatització ofereix bones oportunitats laborals.</div>
+            <div class="key-point">El dinamisme del sector industrial em permetrà créixer professionalment contínuament.</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="reflection-card">
+          <div class="reflection-header">
+            <h4><i class="bi bi-check-circle me-2"></i> Fortaleses</h4>
+          </div>
+          <div class="reflection-body">
+            <div class="key-point">Formació tècnica sòlida en sistemes microinformàtics i xarxes.</div>
+            <div class="key-point">Habilitat per aprendre noves tecnologies ràpidament.</div>
+            <div class="key-point">Capacitat de treball en equip i resolució de problemes.</div>
+            <div class="key-point">Compromís amb la qualitat i l'eficiència en el treball.</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="reflection-card">
+          <div class="reflection-header">
+            <h4><i class="bi bi-exclamation-triangle me-2"></i> Reptes</h4>
+          </div>
+          <div class="reflection-body">
+            <div class="key-point">Adquirir coneixements específics d'automatització industrial.</div>
+            <div class="key-point">Obtenir experiència pràctica en entorns industrials reals.</div>
+            <div class="key-point">Construir una xarxa de contactes en el sector.</div>
+            <div class="key-point">Mantenir-me actualitzat amb les noves tecnologies.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <div class="quote-box">
+          <p class="quote-text">"El futur pertany als qui creuen en la bellesa dels seus somnis. La meva visió és convertir-me en un professional altament qualificat en automatització industrial, contribuint a la innovació tecnològica del nostre país."</p>
+          <p class="quote-author">Hugo Martínez Moreno</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="section-title">Properes Etapes</h3>
+        <ul class="next-steps-list">
+          <li><strong>Finalitzar el CFGM</strong> - Completar amb èxit el cicle formatiu de grau mitjà en Sistemes Microinformàtics i Xarxes.</li>
+          <li><strong>Iniciar el CFGS</strong> - Començar el cicle superior d'Automatització i Robòtica Industrial amb motivació i dedicació.</li>
+          <li><strong>Pràctiques professionals</strong> - Aprofitar les oportunitats de pràctiques per adquirir experiència real en el sector.</li>
+          <li><strong>Xarxa professional</strong> - Continuar construint i mantenint una xarxa de contactes professionals rellevants.</li>
+          <li><strong>Formació contínua</strong> - Complementar la formació oficial amb cursos específics i certificacions.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="card border-primary">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Compromís Professional</h4>
+            <p class="card-text">M'comprometo a dedicar l'esforç i temps necessaris per assolir els meus objectius professionals, mantenint sempre una actitud positiva i d'aprenentatge continu.</p>
+            <a href="contacte.html" class="btn btn-primary mt-3">Contacta'm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animació de les targetes
+    document.addEventListener('DOMContentLoaded', function() {
+      const reflectionCards = document.querySelectorAll('.reflection-card');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      reflectionCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
+</body>
+</html>
